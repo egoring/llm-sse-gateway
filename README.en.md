@@ -6,7 +6,7 @@
 
 **A FastAPI gateway that streams LLM responses over SSE — chat must survive a dead backend.**
 
-When the primary backend (e.g., local vLLM) is down, the gateway transparently falls back to the next backend — but only before the first token. Born from operating a LLM chatbot backend: model servers die eventually.
+When the primary backend (e.g., local vLLM) is down, the gateway transparently falls back to the next backend — but only before the first token.Born from building an LLM chatbot backend in a capstone project: model servers die eventually.
 
 ## The fallback rule — the core design
 
